@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<!-- saved from url=(0059)https://en.wikiversity.org/wiki/Web_programming,_an_example -->
+<html class="client-js ve-not-available" lang="en" dir="ltr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>Web programming, an example - Wikiversity</title>
+<script>document.documentElement.className="client-js";RLCONF={"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":!1,"wgNamespaceNumber":0,"wgPageName":"Web_programming,_an_example","wgTitle":"Web programming, an example","wgCurRevisionId":2044950,"wgRevisionId":2044950,"wgArticleId":133451,"wgIsArticle":!0,"wgIsRedirect":!1,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Articles","Information technology","Web Technology"],"wgBreakFrames":!1,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Web_programming,_an_example","wgRelevantArticleId":133451,"wgRequestId":"XZt2kQpAICMAAHqhcZYAAACO","wgCSPNonce":
+!1,"wgIsProbablyEditable":!0,"wgRelevantPageIsProbablyEditable":!0,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgMediaViewerOnClick":!0,"wgMediaViewerEnabledByDefault":!0,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","pageVariantFallbacks":"en"},"wgMFDisplayWikibaseDescriptions":{"search":!0,"nearby":!0,"watchlist":!0,"tagline":!1},"wgWMESchemaEditAttemptStepOversample":!1,"wgPoweredByHHVM":!1,"wgULSCurrentAutonym":"English","wgNoticeProject":"wikiversity","wgCentralAuthMobileDomain":!1,"wgEditSubmitButtonLabelPublish":!0,"wgSiteNoticeId":"2.81"};RLSTATE={"ext.globalCssJs.user.styles":"ready","site.styles":"ready","noscript":"ready","user.styles":"ready","ext.globalCssJs.user":"ready","user":"ready","user.options":"ready","user.tokens":"loading","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.toc.styles":"ready","wikibase.client.init":"ready","ext.visualEditor.desktopArticleTarget.noscript":
+"ready","ext.uls.interlanguage":"ready","ext.wikimediaBadges":"ready","ext.3d.styles":"ready","ext.dismissableSiteNotice.styles":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready"};RLPAGEMODULES=["site","mediawiki.page.startup","mediawiki.page.ready","mediawiki.toc","mediawiki.searchSuggest","ext.gadget.ReferenceTooltips","ext.centralauth.centralautologin","mmv.head","mmv.bootstrap.autostart","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.eventLogging","ext.wikimediaEvents","ext.navigationTiming","ext.uls.compactlinks","ext.uls.interface","ext.centralNotice.geoIP","ext.centralNotice.startUp","skins.vector.js","ext.dismissableSiteNotice"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.tokens@tffin",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});});</script>
+<link rel="stylesheet" href="./Web programming, an example - Wikiversity_files/load.php">
+<script async="" src="./Web programming, an example - Wikiversity_files/load(1).php"></script>
+<style>
+.mw-editfont-monospace{font-family:monospace,monospace}.mw-editfont-sans-serif{font-family:sans-serif}.mw-editfont-serif{font-family:serif} .mw-editfont-monospace,.mw-editfont-sans-serif,.mw-editfont-serif{font-size:13px; }.mw-editfont-monospace.oo-ui-textInputWidget,.mw-editfont-sans-serif.oo-ui-textInputWidget,.mw-editfont-serif.oo-ui-textInputWidget{font-size:inherit}.mw-editfont-monospace > .oo-ui-inputWidget-input,.mw-editfont-sans-serif > .oo-ui-inputWidget-input,.mw-editfont-serif > .oo-ui-inputWidget-input{font-size:13px}
+.mw-ui-button{background-color:#f8f9fa;color:#222222;display:inline-block;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;min-width:4em;max-width:28.75em;margin:0;padding:0.57142857em 0.9375em;border:1px solid #a2a9b1;border-radius:2px;cursor:pointer;vertical-align:middle;font-family:inherit;font-size:1em;font-weight:bold;line-height:1;text-align:center;-webkit-appearance:none;*display:inline; zoom:1}.mw-ui-button:visited{color:#222222}.mw-ui-button:hover{background-color:#ffffff;color:#444444;border-color:#a2a9b1}.mw-ui-button:focus{background-color:#ffffff;color:#222222;border-color:#3366cc;box-shadow:inset 0 0 0 1px #3366cc,inset 0 0 0 2px #ffffff;outline-width:0}.mw-ui-button:focus::-moz-focus-inner{border-color:transparent;padding:0}.mw-ui-button:active,.mw-ui-button.is-on{background-color:#c8ccd1;color:#000000;border-color:#72777d;box-shadow:none}.mw-ui-button:disabled{background-color:#c8ccd1;color:#ffffff;border-color:#c8ccd1;cursor:default}.mw-ui-button:disabled:hover,.mw-ui-button:disabled:active{background-color:#c8ccd1;color:#ffffff;box-shadow:none;border-color:#c8ccd1}.mw-ui-button:not(:disabled){-webkit-transition:background-color 100ms,color 100ms,border-color 100ms,box-shadow 100ms;-moz-transition:background-color 100ms,color 100ms,border-color 100ms,box-shadow 100ms;transition:background-color 100ms,color 100ms,border-color 100ms,box-shadow 100ms}.mw-ui-button.mw-ui-quiet,.mw-ui-button.mw-ui-quiet.mw-ui-progressive,.mw-ui-button.mw-ui-quiet.mw-ui-destructive{background-color:transparent;color:#222222;border-color:transparent}.mw-ui-button.mw-ui-quiet:hover,.mw-ui-button.mw-ui-quiet.mw-ui-progressive:hover,.mw-ui-button.mw-ui-quiet.mw-ui-destructive:hover{background-color:transparent;color:#444444;border-color:transparent;box-shadow:none}.mw-ui-button.mw-ui-quiet:active,.mw-ui-button.mw-ui-quiet.mw-ui-progressive:active,.mw-ui-button.mw-ui-quiet.mw-ui-destructive:active{background-color:transparent;color:#000000;border-color:transparent}.mw-ui-button.mw-ui-quiet:focus,.mw-ui-button.mw-ui-quiet.mw-ui-progressive:focus,.mw-ui-button.mw-ui-quiet.mw-ui-destructive:focus{background-color:transparent;color:#222222;border-color:transparent;box-shadow:none}.mw-ui-button.mw-ui-quiet:disabled,.mw-ui-button.mw-ui-quiet.mw-ui-progressive:disabled,.mw-ui-button.mw-ui-quiet.mw-ui-destructive:disabled,.mw-ui-button.mw-ui-quiet:disabled:hover,.mw-ui-button.mw-ui-quiet.mw-ui-progressive:disabled:hover,.mw-ui-button.mw-ui-quiet.mw-ui-destructive:disabled:hover,.mw-ui-button.mw-ui-quiet:disabled:active,.mw-ui-button.mw-ui-quiet.mw-ui-progressive:disabled:active,.mw-ui-button.mw-ui-quiet.mw-ui-destructive:disabled:active{background-color:transparent;color:#72777d;border-color:transparent}.mw-ui-button.mw-ui-progressive{background-color:#3366cc;color:#fff;border:1px solid #3366cc}.mw-ui-button.mw-ui-progressive:hover{background-color:#447ff5;border-color:#447ff5}.mw-ui-button.mw-ui-progressive:focus{box-shadow:inset 0 0 0 1px #3366cc,inset 0 0 0 2px #ffffff}.mw-ui-button.mw-ui-progressive:active,.mw-ui-button.mw-ui-progressive.is-on{background-color:#2a4b8d;border-color:#2a4b8d;box-shadow:none}.mw-ui-button.mw-ui-progressive:disabled{background-color:#c8ccd1;color:#fff;border-color:#c8ccd1}.mw-ui-button.mw-ui-progressive:disabled:hover,.mw-ui-button.mw-ui-progressive:disabled:active{background-color:#c8ccd1;color:#fff;border-color:#c8ccd1;box-shadow:none}.mw-ui-button.mw-ui-progressive.mw-ui-quiet{color:#3366cc}.mw-ui-button.mw-ui-progressive.mw-ui-quiet:hover{background-color:transparent;color:#447ff5}.mw-ui-button.mw-ui-progressive.mw-ui-quiet:active{color:#2a4b8d}.mw-ui-button.mw-ui-progressive.mw-ui-quiet:focus{background-color:transparent;color:#3366cc}.mw-ui-button.mw-ui-destructive{background-color:#dd3333;color:#fff;border:1px solid #dd3333}.mw-ui-button.mw-ui-destructive:hover{background-color:#ff4242;border-color:#ff4242}.mw-ui-button.mw-ui-destructive:focus{box-shadow:inset 0 0 0 1px #dd3333,inset 0 0 0 2px #ffffff}.mw-ui-button.mw-ui-destructive:active,.mw-ui-button.mw-ui-destructive.is-on{background-color:#b32424;border-color:#b32424;box-shadow:none}.mw-ui-button.mw-ui-destructive:disabled{background-color:#c8ccd1;color:#fff;border-color:#c8ccd1}.mw-ui-button.mw-ui-destructive:disabled:hover,.mw-ui-button.mw-ui-destructive:disabled:active{background-color:#c8ccd1;color:#fff;border-color:#c8ccd1;box-shadow:none}.mw-ui-button.mw-ui-destructive.mw-ui-quiet{color:#dd3333}.mw-ui-button.mw-ui-destructive.mw-ui-quiet:hover{background-color:transparent;color:#ff4242}.mw-ui-button.mw-ui-destructive.mw-ui-quiet:active{color:#b32424}.mw-ui-button.mw-ui-destructive.mw-ui-quiet:focus{background-color:transparent;color:#dd3333}.mw-ui-button.mw-ui-big{font-size:1.3em}.mw-ui-button.mw-ui-block{display:block;width:100%;margin-left:auto;margin-right:auto}input.mw-ui-button::-moz-focus-inner,button.mw-ui-button::-moz-focus-inner{margin-top:-1px;margin-bottom:-1px}a.mw-ui-button{text-decoration:none}a.mw-ui-button:hover,a.mw-ui-button:focus{text-decoration:none}.mw-ui-button-group > *{min-width:48px;border-radius:0;float:left}.mw-ui-button-group > *:first-child{border-top-left-radius:2px;border-bottom-left-radius:2px}.mw-ui-button-group > *:not(:first-child){border-left:0}.mw-ui-button-group > *:last-child{border-top-right-radius:2px;border-bottom-right-radius:2px}.mw-ui-button-group .is-on .button{cursor:default}
+.mw-ui-icon{position:relative;line-height:1.5em;min-height:1.5em;min-width:1.5em}span.mw-ui-icon{display:inline-block}.mw-ui-icon.mw-ui-icon-element{text-indent:-999px;overflow:hidden;width:3.5em;min-width:3.5em;max-width:3.5em}.mw-ui-icon.mw-ui-icon-element:before{left:0;right:0;position:absolute;margin:0 1em}.mw-ui-icon.mw-ui-icon-element.mw-ui-icon-large{width:4.625em;min-width:4.625em;max-width:4.625em;line-height:4.625em;min-height:4.625em}.mw-ui-icon.mw-ui-icon-element.mw-ui-icon-large:before{min-height:4.625em}.mw-ui-icon.mw-ui-icon-before:before,.mw-ui-icon.mw-ui-icon-element:before{background-position:50% 50%;background-repeat:no-repeat;background-size:100% auto;float:left;display:block;min-height:1.5em;content:''}.mw-ui-icon.mw-ui-icon-before:before{position:relative;width:1.5em;margin-right:1em}.mw-ui-icon.mw-ui-icon-small:before{background-size:66.67% auto}
+.ve-init-mw-progressBarWidget{height:1em;overflow:hidden;margin:0 25%}.ve-init-mw-progressBarWidget-bar{height:1em;width:0} .ve-init-mw-progressBarWidget{height:0.75em;border:1px solid #36c;background:#fff;border-radius:2px;box-shadow:0 0.1em 0 0 rgba(0,0,0,0.15)}.ve-init-mw-progressBarWidget-bar{height:0.75em;background:#36c}
+.referencetooltip{position:absolute;list-style:none;list-style-image:none;opacity:0;font-size:12px;margin:0;z-index:5;padding:0}.referencetooltip > li{background:#fff;border:1px solid #bbb;-webkit-box-shadow:0 0 10px rgba(0,0,0,0.2);-moz-box-shadow:0 0 10px rgba(0,0,0,0.2);box-shadow:0 0 10px rgba(0,0,0,0.2);margin:0;padding:8px 10px;line-height:18px;max-width:300px}.referencetooltip > li + li{box-sizing:border-box;margin-left:7px;margin-top:-1px;border:0;padding:0;height:3px;width:0;background-color:transparent;-webkit-box-shadow:none;-moz-box-shadow:none;box-shadow:none;border-top:12px #bbb solid;border-right:7px transparent solid;border-left:7px transparent solid}.referencetooltip > li + li::after{z-index:111;content:'';border:6px solid transparent;border-bottom:0;border-top:8px solid #fff;height:0;width:0;display:block;margin-left:-6px;margin-top:-12px}.RTflipped{padding-top:13px}.referencetooltip.RTflipped > li + li{position:absolute;top:0;border-top:0;border-bottom:12px #bbb solid}.referencetooltip.RTflipped > li + li::after{border-top:0;border-bottom:8px #fff solid;position:absolute;margin-top:7px}.RTsettings{ background-image:linear-gradient(transparent,transparent),url(data:image/svg+xml,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%0D%0A%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%3E%0D%0A%20%20%20%20%3Cpath%20fill%3D%22%23555%22%20d%3D%22M20%2014.5v-2.9l-1.8-.3c-.1-.4-.3-.8-.6-1.4l1.1-1.5-2.1-2.1-1.5%201.1c-.5-.3-1-.5-1.4-.6L13.5%205h-2.9l-.3%201.8c-.5.1-.9.3-1.4.6L7.4%206.3%205.3%208.4l1%201.5c-.3.5-.4.9-.6%201.4l-1.7.2v2.9l1.8.3c.1.5.3.9.6%201.4l-1%201.5%202.1%202.1%201.5-1c.4.2.9.4%201.4.6l.3%201.8h3l.3-1.8c.5-.1.9-.3%201.4-.6l1.5%201.1%202.1-2.1-1.1-1.5c.3-.5.5-1%20.6-1.4l1.5-.3zM12%2016c-1.7%200-3-1.3-3-3s1.3-3%203-3%203%201.3%203%203-1.3%203-3%203z%22%2F%3E%0D%0A%3C%2Fsvg%3E);  display:block;float:right;cursor:pointer;margin:0;margin-top:-4px;height:24px;width:24px;border-radius:2px;box-sizing:border-box;background-position:center center;background-repeat:no-repeat;background-size:24px 24px;margin-left:8px}.RTsettings:hover{background-color:#eee}.RTTarget{background-color:#def}
+.suggestions{overflow:hidden;position:absolute;top:0;left:0;width:0;border:0;z-index:1099;padding:0;margin:-1px 0 0 0}.suggestions-special{position:relative;background-color:#fff;cursor:pointer;border:1px solid #a2a9b1;margin:0;margin-top:-2px;display:none;padding:0.25em 0.25em;line-height:1.25em}.suggestions-results{background-color:#fff;cursor:pointer;border:1px solid #a2a9b1;padding:0;margin:0}.suggestions-result{color:#000;margin:0;line-height:1.5em;padding:0.01em 0.25em;text-align:left; overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.suggestions-result-current{background-color:#2a4b8d;color:#fff}.suggestions-special .special-label{color:#72777d;text-align:left}.suggestions-special .special-query{color:#000;font-style:italic;text-align:left}.suggestions-special .special-hover{background-color:#c8ccd1}.suggestions-result-current .special-label,.suggestions-result-current .special-query{color:#fff}.highlight{font-weight:bold}
+@media screen {
+	.tochidden,.toctoggle{-moz-user-select:none;-webkit-user-select:none;-ms-user-select:none;user-select:none}.toctoggle{font-size:94%}}
+@media print {
+	.toc.tochidden,.toctoggle{display:none}}
+@-webkit-keyframes centralAuthPPersonalAnimation{0%{opacity:0;-webkit-transform:translateY(-20px)}100%{opacity:1;-webkit-transform:translateY(0)}}@-moz-keyframes centralAuthPPersonalAnimation{0%{opacity:0;-moz-transform:translateY(-20px)}100%{opacity:1;-moz-transform:translateY(0)}}@-o-keyframes centralAuthPPersonalAnimation{0%{opacity:0;-o-transform:translateY(-20px)}100%{opacity:1;-o-transform:translateY(0)}}@keyframes centralAuthPPersonalAnimation{0%{opacity:0;transform:translateY(-20px)}100%{opacity:1;transform:translateY(0)}}.centralAuthPPersonalAnimation{-webkit-animation-duration:1s;-moz-animation-duration:1s;-o-animation-duration:1s;animation-duration:1s;-webkit-animation-fill-mode:both;-moz-animation-fill-mode:both;-o-animation-fill-mode:both;animation-fill-mode:both;-webkit-animation-name:centralAuthPPersonalAnimation;-moz-animation-name:centralAuthPPersonalAnimation;-o-animation-name:centralAuthPPersonalAnimation;animation-name:centralAuthPPersonalAnimation}
+.uls-menu{border-radius:2px; font-size:medium}.uls-search,.uls-language-settings-close-block{border-top-right-radius:2px;border-top-left-radius:2px}.uls-language-list{border-bottom-right-radius:2px;border-bottom-left-radius:2px}.uls-menu.callout:before,.uls-menu.callout:after{border-top:10px solid transparent;border-bottom:10px solid transparent;display:inline-block; top:17px;position:absolute;content:''}.uls-menu.callout.selector-right:before{ border-left:10px solid #c8ccd1; right:-11px}.uls-menu.callout.selector-right:after{ border-left:10px solid #fff; right:-10px}.uls-menu.callout.selector-left:before{ border-right:10px solid #c8ccd1; left:-11px}.uls-menu.callout.selector-left:after{ border-right:10px solid #fff; left:-10px}.uls-ui-languages button{margin:5px 15px 5px 0;white-space:nowrap;overflow:hidden}.uls-search-wrapper-wrapper{position:relative;padding-left:40px;margin-top:5px;margin-bottom:5px}.uls-icon-back{background:transparent url(/w/extensions/UniversalLanguageSelector/resources/images/back-grey-ltr.png?90e9b) no-repeat scroll center center;background-image:-webkit-linear-gradient(transparent,transparent),url(/w/extensions/UniversalLanguageSelector/resources/images/back-grey-ltr.svg?e226b);background-image:linear-gradient(transparent,transparent),url(/w/extensions/UniversalLanguageSelector/resources/images/back-grey-ltr.svg?e226b);background-size:28px;background-position:center center;height:32px;width:40px;display:block;position:absolute;left:0;border-right:1px solid #c8ccd1;opacity:0.8}.uls-icon-back:hover{opacity:1;cursor:pointer}.uls-menu .uls-no-results-view .uls-no-found-more{background-color:#fff}.uls-menu .uls-no-results-view h3{padding:0 28px;margin:0;color:#54595d;font-size:1em;font-weight:normal}  .skin-vector .uls-menu{border-color:#c8ccd1;-webkit-box-shadow:0 2px 2px 0 rgba(0,0,0,0.25);box-shadow:0 2px 2px 0 rgba(0,0,0,0.25);font-size:0.875em}.skin-vector .uls-search{border-bottom-color:#c8ccd1}.skin-vector .uls-search-label{opacity:0.51;-webkit-transition:opacity 250ms;-moz-transition:opacity 250ms;transition:opacity 250ms}.skin-vector .uls-search-wrapper:hover .uls-search-label{opacity:0.87}.skin-vector .uls-filtersuggestion{color:#72777d}.skin-vector .uls-lcd-region-title{color:#54595d}</style><style>
+.suggestions a.mw-searchSuggest-link,.suggestions a.mw-searchSuggest-link:hover,.suggestions a.mw-searchSuggest-link:active,.suggestions a.mw-searchSuggest-link:focus{color:#000;text-decoration:none}.suggestions-result-current a.mw-searchSuggest-link,.suggestions-result-current a.mw-searchSuggest-link:hover,.suggestions-result-current a.mw-searchSuggest-link:active,.suggestions-result-current a.mw-searchSuggest-link:focus{color:#fff}.suggestions a.mw-searchSuggest-link .special-query{ overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.mw-mmv-overlay{position:fixed;top:0;left:0;right:0;bottom:0;z-index:1000;background-color:#000}body.mw-mmv-lightbox-open{overflow-y:auto;  }body.mw-mmv-lightbox-open #mw-page-base,body.mw-mmv-lightbox-open #mw-head-base,body.mw-mmv-lightbox-open #mw-navigation,body.mw-mmv-lightbox-open #content,body.mw-mmv-lightbox-open #footer,body.mw-mmv-lightbox-open #globalWrapper{ display:none}body.mw-mmv-lightbox-open > *{ display:none}body.mw-mmv-lightbox-open > .mw-mmv-overlay,body.mw-mmv-lightbox-open > .mw-mmv-wrapper{display:block}.mw-mmv-filepage-buttons{margin-top:5px}.mw-mmv-filepage-buttons .mw-mmv-view-expanded,.mw-mmv-filepage-buttons .mw-mmv-view-config{display:block;line-height:inherit}.mw-mmv-filepage-buttons .mw-mmv-view-expanded.mw-ui-icon:before{background-image:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 1024 768%22%3E %3Cpath d=%22M851.2 71.6L690.7 232.1l-40.1-40.3-9.6 164.8 164.8-9.3-40.3-40.4L926 146.4l58.5 58.5L997.6 0 792.7 13.1%22/%3E %3Cpath d=%22M769.6 89.3H611.9l70.9 70.8 7.9 7.5m-47.1 234.6l-51.2 3 3-51.2 9.4-164.4 5.8-100.3H26.4V768h883.1V387l-100.9 5.8-165 9.4zM813.9 678H113.6l207.2-270.2 31.5-12.9L548 599.8l105.9-63.2 159.8 140.8.2.6zm95.6-291.9V228l-79.1 78.9 7.8 7.9%22/%3E %3C/svg%3E")}.mw-mmv-filepage-buttons .mw-mmv-view-config.mw-ui-icon:before{background-image:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 1024 768%22%3E %3Cpath d=%22M897 454.6V313.4L810.4 299c-6.4-23.3-16-45.7-27.3-65.8l50.5-71.4-99.4-100.2-71.4 50.5c-20.9-11.2-42.5-20.9-65.8-27.3L582.6-1H441.4L427 85.6c-23.3 6.4-45.7 16-65.8 27.3l-71.4-50.5-100.3 99.5 50.5 71.4c-11.2 20.9-20.9 42.5-27.3 66.6L127 313.4v141.2l85.8 14.4c6.4 23.3 16 45.7 27.3 66.6L189.6 607l99.5 99.5 71.4-50.5c20.9 11.2 42.5 20.9 66.6 27.3l14.4 85.8h141.2l14.4-86.6c23.3-6.4 45.7-16 65.8-27.3l71.4 50.5 99.5-99.5-50.5-71.4c11.2-20.9 20.9-42.5 27.3-66.6l86.4-13.6zm-385 77c-81.8 0-147.6-66.6-147.6-147.6 0-81.8 66.6-147.6 147.6-147.6S659.6 302.2 659.6 384 593.8 531.6 512 531.6z%22/%3E %3C/svg%3E");opacity:0.75}.mw-mmv-filepage-buttons .mw-mmv-view-config.mw-ui-icon:before:hover{opacity:1}.mw-mmv-button{background-color:transparent;min-width:0;border:0;padding:0;overflow-x:hidden;text-indent:-9999em}
+.ve-init-mw-tempWikitextEditorWidget{border:0;padding:0;color:inherit;line-height:1.5em;width:100%; }.ve-init-mw-tempWikitextEditorWidget:focus{outline:0;padding:0}.ve-init-mw-tempWikitextEditorWidget::selection{background:rgba(109,169,247,0.5); }
+#p-lang .body ul .uls-trigger,#p-lang .pBody ul .uls-trigger{background-image:none;padding:0} .mw-interlanguage-selector,.mw-interlanguage-selector:active{cursor:pointer;padding:4px 6px 4px 25px;font-size:13px;font-weight:normal;background-image:url(/w/extensions/UniversalLanguageSelector/resources/images/compact-links-trigger.png?b0c8e);background-image:linear-gradient(transparent,transparent),url(/w/extensions/UniversalLanguageSelector/resources/images/compact-links-trigger.svg?ebb8e);background-size:18px;background-repeat:no-repeat;background-position:left 4px center;margin:4px 0;text-align:left}.mw-interlanguage-selector:active,.mw-interlanguage-selector.selector-open{background-color:#c8ccd1;color:#54595d}.interlanguage-uls-menu:before,.interlanguage-uls-menu:after{border-top:10px solid transparent;border-bottom:10px solid transparent;display:inline-block; top:17px;position:absolute;content:''}.interlanguage-uls-menu.selector-right:before{ border-left:10px solid #c8ccd1; right:-11px}.interlanguage-uls-menu.selector-right:after{ border-left:10px solid #fff; right:-10px}.interlanguage-uls-menu.selector-left:before{ border-right:10px solid #c8ccd1; left:-11px}.interlanguage-uls-menu.selector-left:after{ border-right:10px solid #fff; left:-10px}
+#uls-settings-block{background-color:#f8f9fa;border-top:1px solid #c8ccd1;padding-left:10px;line-height:1.2em;border-radius:0 0 2px 2px}#uls-settings-block > button{background:left top transparent no-repeat;background-size:20px auto;color:#54595d;display:inline-block;margin:8px 15px;border:0;padding:0 0 0 26px;font-size:medium;cursor:pointer}#uls-settings-block > button:hover{color:#222}#uls-settings-block > button.display-settings-block{background-image:url(/w/extensions/UniversalLanguageSelector/resources/images/display.png?d25f1);background-image:linear-gradient(transparent,transparent),url(/w/extensions/UniversalLanguageSelector/resources/images/display.svg?a28d5)}#uls-settings-block > button.input-settings-block{background-image:url(/w/extensions/UniversalLanguageSelector/resources/images/input.png?aea9e);background-image:linear-gradient(transparent,transparent),url(/w/extensions/UniversalLanguageSelector/resources/images/input.svg?2ec7d)}</style><style>
+.ve-activated .ve-init-mw-desktopArticleTarget-editableContent #toc,.ve-activated #siteNotice,.ve-activated .mw-indicators,.ve-activated #t-print,.ve-activated #t-permalink,.ve-activated #p-coll-print_export,.ve-activated #t-cite,.ve-deactivating .ve-ui-surface,.ve-active .ve-init-mw-desktopArticleTarget-editableContent,.ve-active .ve-init-mw-tempWikitextEditorWidget{display:none} .ve-activating .ve-ui-surface{height:0;padding:0 !important; overflow:hidden} .ve-loading #content > :not(.ve-init-mw-desktopArticleTarget-loading-overlay), .ve-activated .ve-init-mw-desktopArticleTarget-uneditableContent{pointer-events:none;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;opacity:0.5}.ve-activated #firstHeading{ -webkit-user-select:text;-moz-user-select:text;-ms-user-select:text;user-select:text;pointer-events:auto;cursor:text}.ve-activated #firstHeading a{ pointer-events:none}.ve-activated #catlinks{cursor:pointer}.ve-activated #catlinks a{opacity:1}.ve-activated #content{position:relative} .ve-init-mw-desktopArticleTarget-loading-overlay{position:absolute;top:1.25em;left:0;right:0;z-index:1;margin-top:-0.5em}.ve-init-mw-desktopArticleTarget-toolbarPlaceholder{transition:height 250ms ease;height:0; } .oo-ui-element-hidden{display:none !important; } .mw-editsection{white-space:nowrap; unicode-bidi:-moz-isolate;unicode-bidi:-webkit-isolate;unicode-bidi:isolate}.mw-editsection-divider{color:#54595d} .ve-init-mw-desktopArticleTarget-toolbarPlaceholder{border-bottom:1px solid #c8ccd1;box-shadow:0 1px 1px 0 rgba(0,0,0,0.1)}.ve-init-mw-desktopArticleTarget-toolbarPlaceholder-open{height:42px} .ve-init-mw-desktopArticleTarget-toolbar,.ve-init-mw-desktopArticleTarget-toolbarPlaceholder{font-size:0.875em; margin:-1.14em -1.14em 1.14em -1.14em; }@media screen and (min-width:982px){.ve-init-mw-desktopArticleTarget-toolbar,.ve-init-mw-desktopArticleTarget-toolbarPlaceholder{ margin:-1.43em -1.71em 1.43em -1.71em}}</style><meta name="ResourceLoaderDynamicStyles" content="">
+<link rel="stylesheet" href="./Web programming, an example - Wikiversity_files/load(2).php">
+<meta name="generator" content="MediaWiki 1.34.0-wmf.25">
+<meta name="referrer" content="origin">
+<meta name="referrer" content="origin-when-crossorigin">
+<meta name="referrer" content="origin-when-cross-origin">
+<meta property="og:image" content="https://upload.wikimedia.org/wikiversity/en/e/e0/Alert_Service_Entity_Diagram.png">
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="https://en.wikiversity.org/w/index.php?title=Web_programming,_an_example&amp;action=edit">
+<link rel="edit" title="Edit this page" href="https://en.wikiversity.org/w/index.php?title=Web_programming,_an_example&amp;action=edit">
+<link rel="shortcut icon" href="https://en.wikiversity.org/static/favicon/wikiversity.ico">
+<link rel="search" type="application/opensearchdescription+xml" href="https://en.wikiversity.org/w/opensearch_desc.php" title="Wikiversity (en)">
+<link rel="EditURI" type="application/rsd+xml" href="https://en.wikiversity.org/w/api.php?action=rsd">
+<link rel="license" href="https://creativecommons.org/licenses/by-sa/3.0/">
+<link rel="alternate" type="application/atom+xml" title="Wikiversity Atom feed" href="https://en.wikiversity.org/w/index.php?title=Special:RecentChanges&amp;feed=atom">
+<link rel="canonical" href="https://en.wikiversity.org/wiki/Web_programming,_an_example">
+<link rel="dns-prefetch" href="https://login.wikimedia.org/">
+<link rel="dns-prefetch" href="https://meta.wikimedia.org/">
+<!--[if lt IE 9]><script src="/w/resources/lib/html5shiv/html5shiv.js"></script><![endif]-->
+<style>.client-js .mw-dismissable-notice { display: block; }</style><script src="./Web programming, an example - Wikiversity_files/index.php"></script><script src="./Web programming, an example - Wikiversity_files/index(1).php"></script><script src="./Web programming, an example - Wikiversity_files/index(2).php"></script><script src="./Web programming, an example - Wikiversity_files/index(3).php"></script><script src="./Web programming, an example - Wikiversity_files/index(4).php"></script><script src="./Web programming, an example - Wikiversity_files/index(5).php"></script><script src="./Web programming, an example - Wikiversity_files/index(6).php"></script><script src="./Web programming, an example - Wikiversity_files/index(7).php"></script><script src="./Web programming, an example - Wikiversity_files/index(8).php"></script><script src="./Web programming, an example - Wikiversity_files/index(9).php"></script><script src="./Web programming, an example - Wikiversity_files/index(10).php"></script></head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject mw-editable page-Web_programming_an_example rootpage-Web_programming_an_example skin-vector action-view">
+<div id="mw-page-base" class="noprint"></div>
+<div id="mw-head-base" class="noprint"></div>
+<div id="content" class="mw-body" role="main">
+	<a id="top"></a>
+	<div id="siteNotice" class="mw-body-content"><div id="centralNotice"></div><!-- CentralNotice --><div class="mw-dismissable-notice"><div class="mw-dismissable-notice-close" style="visibility: visible;">[<a tabindex="0" role="button">dismiss</a>]</div><div class="mw-dismissable-notice-body"><div id="localNotice" lang="en" dir="ltr"><p class="mw-empty-elt"></p><div class="center" style="">
+<big><a href="https://en.wikiversity.org/wiki/Wikiversity:Why_create_an_account%3F" class="mw-redirect" title="Wikiversity:Why create an account?">Why create a Wikiversity account?</a></big></div><p class="mw-empty-elt"></p></div></div></div><script>(function(){var node=document.getElementById("mw-dismissablenotice-anonplace");if(node){node.outerHTML="\u003Cdiv class=\"mw-dismissable-notice\"\u003E\u003Cdiv class=\"mw-dismissable-notice-close\"\u003E[\u003Ca tabindex=\"0\" role=\"button\"\u003Edismiss\u003C/a\u003E]\u003C/div\u003E\u003Cdiv class=\"mw-dismissable-notice-body\"\u003E\u003Cdiv id=\"localNotice\" lang=\"en\" dir=\"ltr\"\u003E\u003Cp class=\"mw-empty-elt\"\u003E\u003C/p\u003E\u003Cdiv class=\"center\" style=\"\"\u003E\n\u003Cbig\u003E\u003Ca href=\"/wiki/Wikiversity:Why_create_an_account%3F\" class=\"mw-redirect\" title=\"Wikiversity:Why create an account?\"\u003EWhy create a Wikiversity account?\u003C/a\u003E\u003C/big\u003E\u003C/div\u003E\u003Cp class=\"mw-empty-elt\"\u003E\u003C/p\u003E\u003C/div\u003E\u003C/div\u003E\u003C/div\u003E";}}());</script></div>
+	<div class="mw-indicators mw-body-content">
+</div>
+
+	<h1 id="firstHeading" class="firstHeading" lang="en">Web programming, an example</h1>
+	
+	<div id="bodyContent" class="mw-body-content">
+		<div id="siteSub" class="noprint">From Wikiversity</div>
+		<div id="contentSub"></div>
+		
+		
+		
+		<div id="jump-to-nav"></div>
+		<a class="mw-jump-link" href="https://en.wikiversity.org/wiki/Web_programming,_an_example#mw-head">Jump to navigation</a>
+		<a class="mw-jump-link" href="https://en.wikiversity.org/wiki/Web_programming,_an_example#p-search">Jump to search</a>
+		<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><div style="float:right; clear:right; margin-left:5px; margin-bottom:1px; margin-top:1px; border:1px solid #E78A69;">
+<table style="border-collapse: collapse; border-spacing: 0; width:228px; background:Seashell; ; border:0px;">
+<tbody><tr>
+<td style="width:45px;height:45px;background:Peachpuff;text-align:center;border:0px;"><a href="https://en.wikiversity.org/wiki/File:38254-new_folder-12.svg" class="image"><img alt="38254-new folder-12.svg" src="./Web programming, an example - Wikiversity_files/36px-38254-new_folder-12.svg.png" decoding="async" width="36" height="36" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/8/80/38254-new_folder-12.svg/54px-38254-new_folder-12.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/8/80/38254-new_folder-12.svg/72px-38254-new_folder-12.svg.png 2x" data-file-width="128" data-file-height="128"></a>
+</td>
+<td style="font-size:8pt; padding:0.5em; line-height:1.25em; border:0px;"><b><a href="https://en.wikiversity.org/wiki/Help:Resources_by_type" title="Help:Resources by type">Type classification</a></b>: this is  an <a href="https://en.wikiversity.org/wiki/Category:Articles" title="Category:Articles">article</a> resource.
+</td></tr></tbody></table>
+</div>  
+<div style="float:right; clear:right; margin-left:5px; margin-bottom:1px; margin-top:1px; border:1px solid #71be3f;">
+<table style="border-collapse: collapse; border-spacing: 0; width:228px; background:#f6fff1; ; border:0px;">
+<tbody><tr>
+<td style="width:45px;height:45px;background:#c0eaa6;text-align:center;border:0px;"><a href="https://en.wikiversity.org/wiki/File:Gnome-fs-client.svg" class="image"><img alt="Gnome-fs-client.svg" src="./Web programming, an example - Wikiversity_files/36px-Gnome-fs-client.svg.png" decoding="async" width="36" height="36" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/9/91/Gnome-fs-client.svg/54px-Gnome-fs-client.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/9/91/Gnome-fs-client.svg/72px-Gnome-fs-client.svg.png 2x" data-file-width="60" data-file-height="60"></a>
+</td>
+<td style="font-size:8pt; padding:0.5em; line-height:1.25em; border:0px;"><b><a href="https://en.wikiversity.org/wiki/Help:Resources_by_subject" title="Help:Resources by subject">Subject classification</a></b>: this is an <a href="https://en.wikiversity.org/wiki/Portal:Information_technology" title="Portal:Information technology">information technology</a> resource.
+</td></tr></tbody></table>
+</div>  
+<div id="toc" class="toc"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none"><div class="toctitle" lang="en" dir="ltr"><h2>Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="https://en.wikiversity.org/wiki/Web_programming,_an_example#Abstract"><span class="tocnumber">1</span> <span class="toctext">Abstract</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="https://en.wikiversity.org/wiki/Web_programming,_an_example#Web_Alert_Service"><span class="tocnumber">2</span> <span class="toctext"><b>Web Alert Service</b></span></a>
+<ul>
+<li class="toclevel-2 tocsection-3"><a href="https://en.wikiversity.org/wiki/Web_programming,_an_example#Design_and_Implementation"><span class="tocnumber">2.1</span> <span class="toctext">Design and Implementation</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="https://en.wikiversity.org/wiki/Web_programming,_an_example#Data_Model"><span class="tocnumber">2.2</span> <span class="toctext">Data Model</span></a>
+<ul>
+<li class="toclevel-3 tocsection-5"><a href="https://en.wikiversity.org/wiki/Web_programming,_an_example#Database_Tables"><span class="tocnumber">2.2.1</span> <span class="toctext">Database Tables</span></a></li>
+<li class="toclevel-3 tocsection-6"><a href="https://en.wikiversity.org/wiki/Web_programming,_an_example#Data_Access_Objects"><span class="tocnumber">2.2.2</span> <span class="toctext">Data Access Objects</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-7"><a href="https://en.wikiversity.org/wiki/Web_programming,_an_example#View,_HTTP-Only_Browsers"><span class="tocnumber">2.3</span> <span class="toctext">View, HTTP-Only Browsers</span></a>
+<ul>
+<li class="toclevel-3 tocsection-8"><a href="https://en.wikiversity.org/wiki/Web_programming,_an_example#Static_pages"><span class="tocnumber">2.3.1</span> <span class="toctext">Static pages</span></a></li>
+<li class="toclevel-3 tocsection-9"><a href="https://en.wikiversity.org/wiki/Web_programming,_an_example#Dynamic_pages"><span class="tocnumber">2.3.2</span> <span class="toctext">Dynamic pages</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-10"><a href="https://en.wikiversity.org/wiki/Web_programming,_an_example#View,_Javascript_Capable_Browsers"><span class="tocnumber">2.4</span> <span class="toctext">View, Javascript Capable Browsers</span></a>
+<ul>
+<li class="toclevel-3 tocsection-11"><a href="https://en.wikiversity.org/wiki/Web_programming,_an_example#JSP"><span class="tocnumber">2.4.1</span> <span class="toctext">JSP</span></a></li>
+<li class="toclevel-3 tocsection-12"><a href="https://en.wikiversity.org/wiki/Web_programming,_an_example#JavaScript"><span class="tocnumber">2.4.2</span> <span class="toctext">JavaScript</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-13"><a href="https://en.wikiversity.org/wiki/Web_programming,_an_example#Controllers"><span class="tocnumber">2.5</span> <span class="toctext">Controllers</span></a>
+<ul>
+<li class="toclevel-3 tocsection-14"><a href="https://en.wikiversity.org/wiki/Web_programming,_an_example#JSON_Exchange_Servlet_for_the_JavaScript_Client"><span class="tocnumber">2.5.1</span> <span class="toctext">JSON Exchange Servlet for the JavaScript Client</span></a></li>
+<li class="toclevel-3 tocsection-15"><a href="https://en.wikiversity.org/wiki/Web_programming,_an_example#AlertServlet_for_the_Thin_Client"><span class="tocnumber">2.5.2</span> <span class="toctext">AlertServlet for the Thin Client</span></a></li>
+<li class="toclevel-3 tocsection-16"><a href="https://en.wikiversity.org/wiki/Web_programming,_an_example#Supporting_Tools"><span class="tocnumber">2.5.3</span> <span class="toctext">Supporting Tools</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-17"><a href="https://en.wikiversity.org/wiki/Web_programming,_an_example#Parting_Thoughts"><span class="tocnumber">3</span> <span class="toctext"><b>Parting Thoughts</b></span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Abstract">Abstract</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://en.wikiversity.org/w/index.php?title=Web_programming,_an_example&amp;action=edit&amp;section=1" title="Edit section: Abstract">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Although a plethora of "Hello World" examples can be found on the web, examples of itermediate complexity are more difficult to come by. When organization or vendor sites provide examples, these are almost always restricted to the products they support, even though a great way to develop web projects is by putting together components from many resources, all of them available from open source projects.
+</p><p>This post makes available <a rel="nofollow" class="external text" href="https://dl.dropboxusercontent.com/u/95473353/MontclareWeb.zip">source code</a> and a high level description of a web programming project of intermediate complexity - a web alert service that allows registered users to schedule email to distribution lists. It includes both client and server side code. The high level description provided here serves as a guide to the code, but would probably not be an adequate substitute for actually reading the code. The reader should already have some knowledge of Servlet, Java Server Page (JSP), Java Database Connection (JDBC), and JavaScript technologies.
+</p><p>The <b>Web Alert Service</b> makes extensive use of open source components. The server side implementation consists of <a rel="nofollow" class="external text" href="http://docs.oracle.com/cd/E15051_01/wls/docs103/webapp/index.html">Servlets and Java Server Pages (JSP)</a>, and uses:
+</p>
+<ul><li>The <a rel="nofollow" class="external text" href="http://db.apache.org/derby/index.html">Apache Derby</a> Java database to store user data.</li></ul>
+<ul><li>The <a rel="nofollow" class="external text" href="http://www.oracle.com/technetwork/java/javamail/index.html">Javamail API</a> to send alert messages.</li></ul>
+<ul><li>The <a rel="nofollow" class="external text" href="http://www.sauronsoftware.it/projects/cron4j/index.php">Cron4j Scheduler</a> to manage schedules.</li></ul>
+<ul><li>Google <a rel="nofollow" class="external text" href="https://code.google.com/p/google-gson/">Gson</a> to manage JavaScript Object Notation (JSON) data exchange with browser clients.</li></ul>
+<p>The Servlets and JSP are hosted by an <a rel="nofollow" class="external text" href="http://httpd.apache.org/">Apache Web Server</a> with a <a rel="nofollow" class="external text" href="http://tomcat.apache.org/">Tomcat</a> Servlet Container, running on <a rel="nofollow" class="external text" href="http://www.ubuntu.com/">Ubuntu</a>.
+</p><p>The client side includes two distinct implementations:
+</p>
+<ul><li>A pure HTTP client with very simple forms, appropriate for browsers with limited capabilities on handheld devices.</li></ul>
+<ul><li>A JavaScript based client using the <a rel="nofollow" class="external text" href="http://jquery.com/">jQuery</a> JavaScript library, appropriate for full featured browsers on desktop devices.</li></ul>
+<p>Last but not least, the <a rel="nofollow" class="external text" href="http://www.eclipse.org/">Eclipse</a> Integrated Development Environment (IDE) is a valuable tool to facilitate and accelerate development.
+</p>
+<h2><span class="mw-headline" id="Web_Alert_Service"><b>Web Alert Service</b></span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://en.wikiversity.org/w/index.php?title=Web_programming,_an_example&amp;action=edit&amp;section=2" title="Edit section: Web Alert Service">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<h3><span class="mw-headline" id="Design_and_Implementation">Design and Implementation</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://en.wikiversity.org/w/index.php?title=Web_programming,_an_example&amp;action=edit&amp;section=3" title="Edit section: Design and Implementation">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>The main purpose of the Web Alert Service is to provide an example, at an intermediate complexity level, of both client and server side web programming. The service may also be useful in its own right. There are many existing ways to schedule email alerts that can readily be found on the web. These applications fall into three major types:
+</p><p><br>
+</p>
+<ol><li>Plug-ins for commercial email clients. These plug-ins allow the email client (for example Microsoft Outlook on your personal computer) to schedule messages to be sent by their email server. They rely on the client's existing email service (for example Microsoft Exchange supported by an IT department at the workplace).</li>
+<li>Browser plug-ins for web mail services. At present, freely available web mail service provide no scheduling capability. These browser plug-ins use the web browser as the graphical interface for scheduling messages. The plug-in relays the message to a third party server, which takes responsibility for sending the message at the correct time.</li>
+<li>Commercial mass mailing web sites where a user account can be created. After logging in, the site's web interface (usually a series of forms) allows the user to write and schedule messages to a list of email addresses. Trial accounts are often available for free, with a limit on the number of messages that could be sent per month.</li></ol>
+<p>Our <b>Web Alert Service</b> most resembles type 3 above, but the main purpose is educational not commercial. It follows the (passive) <a href="https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller" class="extiw" title="wikipedia:Model–view–controller">Model View Controller</a> pattern. The user data model is represented by tables in an Apache Derby database. Data Access Objects (DAO) interact with the database via Structured Query Language (SQL) statements. Servlets provide user account authentication and transaction control logic, as well as the capability to run jobs at future times (via Cron4j) and to send email messages (via Javamail). For HTTP-only browsers, a series of JSP forms provide simple (if somewhat tedious) views of the data model. For JavaScript capable browsers, a more integrated view is available (via jQuery) where the user can make a series of fairly complex changes to the data before saving, a.k.a. committing the transaction.
+</p>
+<h3><span class="mw-headline" id="Data_Model">Data Model</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://en.wikiversity.org/w/index.php?title=Web_programming,_an_example&amp;action=edit&amp;section=4" title="Edit section: Data Model">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>This section describes the data model, i.e. the Derby tables and associated DAO java classes.
+</p>
+<h4><span class="mw-headline" id="Database_Tables">Database Tables</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://en.wikiversity.org/w/index.php?title=Web_programming,_an_example&amp;action=edit&amp;section=5" title="Edit section: Database Tables">edit</a><span class="mw-editsection-bracket">]</span></span></h4>
+<p>The diagram below shows all Alert Service tables.
+</p><p><a href="https://en.wikiversity.org/wiki/File:Alert_Service_Entity_Diagram.png" class="image"><img alt="Alert Service Entity Diagram.png" src="./Web programming, an example - Wikiversity_files/Alert_Service_Entity_Diagram.png" decoding="async" width="822" height="542" data-file-width="822" data-file-height="542"></a>
+</p><p>The <b>Users</b> table stores the login (UserName), password, and GMT offset for each registered user. Its primary key is an integer UserId. Business rules (see section on Controller) enforce uniqueness for UserName. The password is used for authentication, and the GMT offset is used to translate between the user's time and server time.
+</p><p>The <b>Groups, Addresses, Messages, and Jobs</b> tables store user data for scheduling and sending alert messages. They each also have integer primary keys and unique name fields. Groups are aliases for distribution lists, i.e. lists of addresses. Messages include the subject and body text to be sent. Jobs describe when to send a message, and to which group. Jobs (schedules) have a repeat attribute - when repeat is "None" the job will be run only once, at the designated time. Repeat can also be "Daily", "Weekly", or "Monthly". Jobs can be active or inactive. Only active jobs will be launched at the designated time (inactive jobs are dormant entries).
+</p><p>Relationship tables UserAddresses, UserMessages, UserJobs contain pairs of integer Ids - a UserId paired with the key into the Addresses, Messages, or Jobs table (a.k.a foreign keys). These relationships are used to partition user data (so that each user's data is visible only to its owner) and to cascade changes to all relevant tables when a user is modified or deleted.
+</p><p>Likewise, relationship tables <b>GroupAddress, GroupJobs</b>, and <b>MessageJobs</b> allow changes to be propagated to dependent tables when a group, address, or job is modified or deleted.
+</p>
+<h4><span class="mw-headline" id="Data_Access_Objects">Data Access Objects</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://en.wikiversity.org/w/index.php?title=Web_programming,_an_example&amp;action=edit&amp;section=6" title="Edit section: Data Access Objects">edit</a><span class="mw-editsection-bracket">]</span></span></h4>
+<p>Our implementation uses two Java classes to support each database table. For example classes <b>User</b> and <b>Users</b> support the <b>Users</b> table. Class <b>User</b> is a simple representation of a single user, with get and set methods for its instance variables. User instance variables are named to match fields in the <b>Users</b> table. Class Users is the actual DAO for the Users table. It includes Java Database Connectivity <a rel="nofollow" class="external text" href="http://www.oracle.com/technetwork/java/javase/jdbc/index.html">(JDBC)</a> methods to add, delete, and modify users. Also included are some support methods, to authenticate a user and to pretty-print the Users table.
+</p><p>Similarly, classes <b>Group/Groups, Address/Addresses</b>, and <b>Job/Jobs</b> support the Groups, Addresses, and Jobs tables. The relationship tables are supported by two classes, <b>Links</b> and <b>Db</b>. These classes do not follow the same pattern as the previously described DAO classes. Both provide methods to make sure that when a table is modified, changes are cascaded to all dependent tables. Class Db also supports basic database functionality (e.g. createConnection, getConnection, and shutdown), as well as some utilities to format data into HTML elements for GUI display.
+</p><p>Access to the database occurs only through the classes described above (User/Users, Group/Groups, Address/Addresses, Job/Jobs, Links, and Db). Please see the Abstract for a link to the source code.
+</p>
+<h3><span id="View.2C_HTTP-Only_Browsers"></span><span class="mw-headline" id="View,_HTTP-Only_Browsers">View, HTTP-Only Browsers</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://en.wikiversity.org/w/index.php?title=Web_programming,_an_example&amp;action=edit&amp;section=7" title="Edit section: View, HTTP-Only Browsers">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>As mentioned in the Abstract, there are two distinct implementations of the client, offering different views of the data. This section describes the HTTP-only thin client, which provides a table-by-table view in a series of GUI screens. Each GUI screen is kept simple so as to be easily navigable on hand-held devices. The implementation consists only of Java Server Pages (JSP).
+</p><p>The thin client consists of five static JSPs index, login, tables, actions, newuser, and two JSP pages dynamically generated by methods generateForm and generateActivationForm in the AlertServlet class. This is one of the main classes in our Alert Service implementation, and will be described in more detail in the Controllers section below.
+</p>
+<h4><span class="mw-headline" id="Static_pages">Static pages</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://en.wikiversity.org/w/index.php?title=Web_programming,_an_example&amp;action=edit&amp;section=8" title="Edit section: Static pages">edit</a><span class="mw-editsection-bracket">]</span></span></h4>
+<ul><li>index.jsp - the top level page. It links to pages for logging in or for requesting a new login, and to the Quick Start guide.</li>
+<li>login.jsp - the login page.</li>
+<li>tables.jsp - allows the user to select the type of data to manage (groups, addresses, messages, or schedules).</li>
+<li>actions.jsp - allows the user to select the action to take (add, delete, modify, or view all) on the previously chosen data table.</li></ul>
+<h4><span class="mw-headline" id="Dynamic_pages">Dynamic pages</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://en.wikiversity.org/w/index.php?title=Web_programming,_an_example&amp;action=edit&amp;section=9" title="Edit section: Dynamic pages">edit</a><span class="mw-editsection-bracket">]</span></span></h4>
+<ul><li>AlertServlet.generateForm() - collect all data relevant to the chosen user action and display them in an HTML form. For example if the user previously chose Groups/View All, this method will generate an HTML table containing all of the user's groups and comments and send it back to the user's browser in a HTTP GET response message. If the user chose Address/Add, this method generates and sends an HTML form to the browser. The form will include fields for the address name, comments, as well as a drop down list (HTML select element) of all the user's groups.</li>
+<li>AlertServelet.generateActivationForm() - if the user chose Schedule/Activate, generate a form containing a set of HTML radio buttions including all of the user's schedules (jobs) that could be activated, and send it back to the user's browser in a HTTP GET response. The user can then choose which schedule to activate.</li></ul>
+<h3><span id="View.2C_Javascript_Capable_Browsers"></span><span class="mw-headline" id="View,_Javascript_Capable_Browsers">View, Javascript Capable Browsers</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://en.wikiversity.org/w/index.php?title=Web_programming,_an_example&amp;action=edit&amp;section=10" title="Edit section: View, Javascript Capable Browsers">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>The richer jQuery client interacts primarily with the JSON Exchange servlet, class <b>SideDoor</b>. It consists of one static JSP and one library of JavaScript functions built on jQuery and jQuery UI libraries. Below is a screen capture of the client GUI running on the Mozilla Firefox browser (the user name is blotted out).
+</p><p><a href="https://en.wikiversity.org/wiki/File:Alert_Service_Js_Client.PNG" class="image"><img alt="Alert Service Js Client.PNG" src="./Web programming, an example - Wikiversity_files/Alert_Service_Js_Client.PNG" decoding="async" width="642" height="506" data-file-width="642" data-file-height="506"></a>
+</p><p>Instead of multiple pages showing one data table each, the rich client shows all tables as tabs (Groups, Addresses, Messages, and Schedules). Each tab includes a table displaying already present data, and a set of buttons to Add, Delete, or Modify data. These behave like radio buttons. Clicking Add, Delete, or Modify brings up a form appropriate for the current tab and action. The user can make multiple changes and revisions, which are not committed until the <b>Save Changes</b> button is clicked. The <b>Discard Changes</b> button allows the user to cancel all changes since the previous save.
+</p><p>Additionally, the <b>Account</b> tab allows the user to modify the password and GMT offset, and to delete the account (i.e. unsubscribe from the service). Arguably, this is a more user friendly and better integrated view of the data. It comes at the cost of more complexity on the client side, requiring the use of JavaScript.
+</p>
+<h4><span class="mw-headline" id="JSP">JSP</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://en.wikiversity.org/w/index.php?title=Web_programming,_an_example&amp;action=edit&amp;section=11" title="Edit section: JSP">edit</a><span class="mw-editsection-bracket">]</span></span></h4>
+<p>Static page desktop.jsp implements part of the rich client. The Id of the main division is "root". It contains the "tabs" division, which in turn contains divisions "groupstab", "addressestab", "messagestab", "schdulestab", and "accounttab". These correspond to the five tabs on the GUI. Division and other HTML element Ids act ask keys (a.k.a tags) for jQuery, triggering JavaScript function calls.
+</p>
+<h4><span class="mw-headline" id="JavaScript">JavaScript</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://en.wikiversity.org/w/index.php?title=Web_programming,_an_example&amp;action=edit&amp;section=12" title="Edit section: JavaScript">edit</a><span class="mw-editsection-bracket">]</span></span></h4>
+<p>Script gui.js implements the remaining part of the rich client. All code in this script is enclosed in a $(document).readdy() statement, to ensure that user data from the server has been completely transferred and ready for display before making the page visible in the browser.
+</p><p>The server URL is stored in global variable <b>url</b>. After sucessful authentication the client "root" division becomes ready. The $("#root").ready() section invokes function reloadUserData() which makes an HTTP GET request to the server. The server sends all data belonging to the current login (as a JSON string) in an HTTP GET respsonse to the client browser. The JSON object is stored in global object <b>userData</b>.
+</p><p>As previously mentioned, clicking Add, Delete, or Modify brings up a form where the user types in or selects values for a group, address, message, or schedule. These input values are stored in global variables, needed by many functions at various stages. Global variables <b>group, address, message, schedule</b>, and <b>account</b> store temporary working values for the corresponding tabs.
+</p><p>Script gui.js also includes a set of plain JavaScript, globally available utility functions to support manipulating user data and the corresponding HTML elements to display the data. The remainder of code in this script consists of jQuerey sections that are triggered to execute when user selects the corresponding element on the GUI. In particular, clicking on <b>Save Changes</b> trigger section $("#commit-radio").button().click(), which invokes commitUserData(). This gathers all of the current user data, packages it into a JSON string, and sends it in an HTTP POST request to the server.
+</p>
+<h3><span class="mw-headline" id="Controllers">Controllers</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://en.wikiversity.org/w/index.php?title=Web_programming,_an_example&amp;action=edit&amp;section=13" title="Edit section: Controllers">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>This section describes the two servlets, as well as the supporting tools, which make up the server side of this implementation. The two servlets share supporting back-end classes and libraries, but differ in the client they support. The AlertServlet servlet supports the thin HTTP-only client, and the SideDoor servlet supports the JavaScript client. Both functionalities could have been combined into a single servlet class, but we preferred to separate them for clarity. The thin client is not capable of transaction management so that logic must be pushed into to the servlet, making it more complex. Conversely, since the rich client can manage the transaction, it manipulates all user data for the current transaction and the servlet merely acts as an interface to the database. The server side logic therefore is simplified.
+</p>
+<h4><span class="mw-headline" id="JSON_Exchange_Servlet_for_the_JavaScript_Client">JSON Exchange Servlet for the JavaScript Client</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://en.wikiversity.org/w/index.php?title=Web_programming,_an_example&amp;action=edit&amp;section=14" title="Edit section: JSON Exchange Servlet for the JavaScript Client">edit</a><span class="mw-editsection-bracket">]</span></span></h4>
+<p>We will describe the simpler servlet first. Class <b>SideDoor</b> implements the servlet for exchanging JSON strings with the rich client.
+</p><p>After the user logs in on the client browser, the client sends an HTTP GET request to the server. SideDoor.doGet() intercepts this request and invokes getUserJsonString(). This method formats the current user's data from the Derby database into a JSON string and puts it into the GET response and sends it to the client. Inner classes <b>Group, Message, Address, Schedule, Account</b>, and <b>UserJson</b> are skeleton classes to support JSON, with instance attributes that map exactly to JSON variable names.
+</p><p>When the user clicks "Save Changes" on the client, it sends an HTTP POST request to the server. SideDoor.doPost() intercepts this request and invokes updateUserData(). Method updateUSerData() unpacks the JSON string from the client and updates Derby database table.
+</p><p>The above approach allows good transaction control. Data on the client side is treated as a working copy. User the various GUI tabs and dialogs, the user can continue to manipulate the data until satisfied. The transaction is committed only when the user clicks <b>Save Chances</b>. Prior to clicking Save Changes, the user can rollback the transaction by clicking <b>Cancel Changes</b> (this is not a true transaction rollback since it can only occur before the commit).
+</p>
+<h4><span class="mw-headline" id="AlertServlet_for_the_Thin_Client">AlertServlet for the Thin Client</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://en.wikiversity.org/w/index.php?title=Web_programming,_an_example&amp;action=edit&amp;section=15" title="Edit section: AlertServlet for the Thin Client">edit</a><span class="mw-editsection-bracket">]</span></span></h4>
+<p>Compared to the SideDoor servlet, the <b>AlertServlet</b> supporting the thin HTTP-only client is more complex, since it must incorporate transaction control logic. It does so with information in <b>HttpSession</b>, obtained from the client HTTP GET and POST requests. Additionally it uses class <b>State</b> to store transaction information. To illustrate the flow of information, consider the scenario of a user (already logged in) adding a new group.
+</p><p>When the client first connects to the server, the HttpServlet infrastructure assigns a valid HttpSession Id to the connection. This session Id persists until the user has been inactive (has not typed anything into the client) for thirty minutes.
+</p><p>After successfully logging in, State instance attributes userName and password shoud be correctly populated, and the client is presented with the form (tables.jsp) to select a data table. Expected values for the remaining State instance variables at this point are: 
+</p>
+<table border="1" cellspacing="0" cellpadding="5">
+<tbody><tr>
+<td><b>table</b>
+</td>
+<td><b>oper</b>
+</td>
+<td><b>status</b>
+</td>
+<td><b>stage</b>
+</td></tr>
+<tr>
+<td>NONE
+</td>
+<td>SELECT
+</td>
+<td>START
+</td>
+<td>SEL_TABLE
+</td></tr></tbody></table>
+<p>The user now selects the <b>Groups</b> radio button and clicks the <b>Select</b> button, triggering an HTTP POST request to AlertServlet (it may be useful to refer to screen shots in the Quick Start guide for the rest of this description). In AlertServlet.doPost(), execution drops into the if (formName.equals(TABLES)) {} block where State.table is set to GROUP and the client is redirected to the <b>Actions</b> form (actions.jsp).
+</p><p>The rest of the transaction is similarly managed: when the user submits a form, doPost() processes the request; when the user selects a link, doGet() processes the request. State attributes table, oper, status, and stage determine which block in doGet() and doPost() does the processing and therefore controls the transaction.
+</p><p>Please review the code for further details.
+</p>
+<h4><span class="mw-headline" id="Supporting_Tools">Supporting Tools</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://en.wikiversity.org/w/index.php?title=Web_programming,_an_example&amp;action=edit&amp;section=16" title="Edit section: Supporting Tools">edit</a><span class="mw-editsection-bracket">]</span></span></h4>
+<p>As previously mentioned, classes Db and Links support Derby database access. Classes Log, Test, Tools, and Util provide other support functions. Of these classes, Util and Tools are by far the most important.
+</p>
+<ul><li>Log.java - provides logging and traffic monitoring counters.</li>
+<li>Test.java - provides a simple unit test harness.</li>
+<li>Tools.java - provides HTML element manipulation and interfaces with the scheduler.</li>
+<li>Util.java - jobs (a.k.a. schedules) are stored in GMT in the Derby database, and presented to the user in the user's own time zone. The server time zone must be taken into account when launching these jobs. Class Util provides the date, calendar, and time zone support for these translations.</li></ul>
+<h2><span class="mw-headline" id="Parting_Thoughts"><b>Parting Thoughts</b></span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://en.wikiversity.org/w/index.php?title=Web_programming,_an_example&amp;action=edit&amp;section=17" title="Edit section: Parting Thoughts">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Hopefully this has been a useful web programming example with source code and a high level description, beyond the more available "Hello World" samples. On the server side our example includes JDBC, servlets, and JSP. On the client side we touched on JavaScript and the jQuery libraries. In our implementation we also made use of open source components to schedule jobs, send Email, and manipulate JSON objects. We rely heavily on Eclipse in our development and testing environments, and on the Apache web server and Tomcat servlet container in our runtime environment. These will be described in future posts.
+</p><p>The table below lists the specific version of components used to develop and run the web alert service:
+</p>
+<table border="1" cellspacing="0" cellpadding="5">
+<tbody><tr>
+<td><b>Component</b>
+</td>
+<td><b>Version</b>
+</td>
+<td><b>Description</b>
+</td></tr>
+<tr>
+<td>Eclipse
+</td>
+<td>Helios V2
+</td>
+<td>Integrated Development Environment
+</td></tr>
+<tr>
+<td>Apache
+</td>
+<td>2.2
+</td>
+<td>Web Server
+</td></tr>
+<tr>
+<td>Tomcat
+</td>
+<td>6.0
+</td>
+<td>Servlet Container
+</td></tr>
+<tr>
+<td>Derby
+</td>
+<td>10.8.2.2
+</td>
+<td>Relational Database
+</td></tr>
+<tr>
+<td>Cron4j
+</td>
+<td>2.2.5
+</td>
+<td>Scheduler
+</td></tr>
+<tr>
+<td>JavaMail
+</td>
+<td>1.4.5
+</td>
+<td>Java Email Library
+</td></tr>
+<tr>
+<td>Gson
+</td>
+<td>2.2.1
+</td>
+<td>Java JSON Library
+</td></tr>
+<tr>
+<td>jQuery
+</td>
+<td>1.7.2
+</td>
+<td>Client Side JavaScript Library
+</td></tr>
+<tr>
+<td>jQuery UI
+</td>
+<td>1.8.21
+</td>
+<td>Client GUI JavaScript Library
+</td></tr></tbody></table>
+<!-- 
+NewPP limit report
+Parsed by mw1269
+Cached time: 20190922030558
+Cache expiry: 2592000
+Dynamic content: false
+Complications: []
+CPU time usage: 0.048 seconds
+Real time usage: 0.068 seconds
+Preprocessor visited node count: 308/1000000
+Preprocessor generated node count: 0/1500000
+Post‐expand include size: 4293/2097152 bytes
+Template argument size: 543/2097152 bytes
+Highest expansion depth: 8/40
+Expensive parser function count: 0/500
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 37/5000000 bytes
+Number of Wikibase entities loaded: 0/400
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%   26.609      1 -total
+ 72.14%   19.196      1 Template:Article
+ 55.23%   14.695      1 Template:Type_box
+ 48.19%   12.822      2 Template:Projectbox
+ 27.51%    7.321      1 Template:Information_technology
+ 16.25%    4.325      1 Template:Subject_box
+ 11.53%    3.068      2 Template:Robelbox/C3
+ 10.49%    2.791      2 Template:Robelbox/C2
+ 10.22%    2.718      2 Template:Robelbox/C1
+-->
+
+<!-- Saved in parser cache with key enwikiversity:pcache:idhash:133451-0!canonical and timestamp 20190922030558 and revision id 2044950
+ -->
+</div><noscript><img src="//en.wikiversity.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /></noscript></div>
+		
+		<div class="printfooter">Retrieved from "<a dir="ltr" href="https://en.wikiversity.org/w/index.php?title=Web_programming,_an_example&amp;oldid=2044950">https://en.wikiversity.org/w/index.php?title=Web_programming,_an_example&amp;oldid=2044950</a>"</div>
+		
+		<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="https://en.wikiversity.org/wiki/Special:Categories" title="Special:Categories">Categories</a>: <ul><li><a href="https://en.wikiversity.org/wiki/Category:Articles" title="Category:Articles">Articles</a></li><li><a href="https://en.wikiversity.org/wiki/Category:Information_technology" title="Category:Information technology">Information technology</a></li><li><a href="https://en.wikiversity.org/wiki/Category:Web_Technology" title="Category:Web Technology">Web Technology</a></li></ul></div></div>
+		<div class="visualClear"></div>
+		
+	</div>
+</div>
+
+
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-anonuserpage">Not logged in</li><li id="pt-anontalk"><a href="https://en.wikiversity.org/wiki/Special:MyTalk" title="Discussion about edits from this IP address [alt-shift-n]" accesskey="n">Talk</a></li><li id="pt-anoncontribs"><a href="https://en.wikiversity.org/wiki/Special:MyContributions" title="A list of edits made from this IP address [alt-shift-y]" accesskey="y">Contributions</a></li><li id="pt-createaccount"><a href="https://en.wikiversity.org/w/index.php?title=Special:CreateAccount&amp;returnto=Web+programming%2C+an+example" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="https://en.wikiversity.org/w/index.php?title=Special:UserLogin&amp;returnto=Web+programming%2C+an+example" title="You are encouraged to log in; however, it is not mandatory [alt-shift-o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+							<li id="ca-nstab-main" class="selected"><span><a href="https://en.wikiversity.org/wiki/Web_programming,_an_example" title="View the content page [alt-shift-c]" accesskey="c">Resource</a></span></li><li id="ca-talk"><span><a href="https://en.wikiversity.org/wiki/Talk:Web_programming,_an_example" rel="discussion" title="Discussion about the content page [alt-shift-t]" accesskey="t">Discuss</a></span></li>						</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<input type="checkbox" class="vectorMenuCheckbox" aria-labelledby="p-variants-label">
+						<h3 id="p-variants-label">
+							<span>Variants</span>
+						</h3>
+						<ul class="menu">
+													</ul>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+							<li id="ca-view" class="collapsible selected"><span><a href="https://en.wikiversity.org/wiki/Web_programming,_an_example">Read</a></span></li><li id="ca-edit" class="collapsible"><span><a href="https://en.wikiversity.org/w/index.php?title=Web_programming,_an_example&amp;action=edit" title="Edit this page [alt-shift-e]" accesskey="e">Edit</a></span></li><li id="ca-history" class="collapsible"><span><a href="https://en.wikiversity.org/w/index.php?title=Web_programming,_an_example&amp;action=history" title="Past revisions of this page [alt-shift-h]" accesskey="h">View history</a></span></li>						</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<input type="checkbox" class="vectorMenuCheckbox" aria-labelledby="p-cactions-label">
+						<h3 id="p-cactions-label"><span>More</span></h3>
+						<ul class="menu">
+													</ul>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+						<form action="https://en.wikiversity.org/w/index.php" id="searchform">
+							<div id="simpleSearch">
+								<input type="search" name="search" placeholder="Search Wikiversity" title="Search Wikiversity [alt-shift-f]" accesskey="f" id="searchInput" autocomplete="off"><input type="hidden" value="Special:Search" name="title"><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton">							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="https://en.wikiversity.org/wiki/Wikiversity:Main_Page" title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id="p-Navigation" aria-labelledby="p-Navigation-label">
+			<h3 id="p-Navigation-label">Navigation</h3>
+			<div class="body">
+								<ul>
+					<li id="n-Main-Page"><a href="https://en.wikiversity.org/wiki/Wikiversity:Main_Page">Main Page</a></li><li id="n-Browse"><a href="https://en.wikiversity.org/wiki/Wikiversity:Browse">Browse</a></li><li id="n-recentchanges"><a href="https://en.wikiversity.org/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [alt-shift-r]" accesskey="r">Recent changes</a></li><li id="n-Guided-tours"><a href="https://en.wikiversity.org/wiki/Help:Guides">Guided tours</a></li><li id="n-Random"><a href="https://en.wikiversity.org/wiki/Special:RandomRootpage">Random</a></li><li id="n-help"><a href="https://en.wikiversity.org/wiki/Help:Contents" title="The place to find out">Help</a></li><li id="n-sitesupport"><a href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikiversity.org&amp;uselang=en" title="Support us">Donate</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-Community" aria-labelledby="p-Community-label">
+			<h3 id="p-Community-label">Community</h3>
+			<div class="body">
+								<ul>
+					<li id="n-portal"><a href="https://en.wikiversity.org/wiki/Wikiversity:Community_Portal" title="About the project, what you can do, where to find things">Portal</a></li><li id="n-Colloquium"><a href="https://en.wikiversity.org/wiki/Wikiversity:Colloquium">Colloquium</a></li><li id="n-currentevents"><a href="https://en.wikiversity.org/wiki/Wikiversity:News" title="Find background information on current events">News</a></li><li id="n-Projects"><a href="https://en.wikiversity.org/wiki/Wikiversity:Community_projects">Projects</a></li><li id="n-Sandbox"><a href="https://en.wikiversity.org/wiki/Wikiversity:Sandbox">Sandbox</a></li><li id="n-Help-desk"><a href="https://en.wikiversity.org/wiki/Wikiversity:Help_desk">Help desk</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-tb" aria-labelledby="p-tb-label">
+			<h3 id="p-tb-label">Tools</h3>
+			<div class="body">
+								<ul>
+					<li id="t-whatlinkshere"><a href="https://en.wikiversity.org/wiki/Special:WhatLinksHere/Web_programming,_an_example" title="A list of all wiki pages that link here [alt-shift-j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="https://en.wikiversity.org/wiki/Special:RecentChangesLinked/Web_programming,_an_example" rel="nofollow" title="Recent changes in pages linked from this page [alt-shift-k]" accesskey="k">Related changes</a></li><li id="t-specialpages"><a href="https://en.wikiversity.org/wiki/Special:SpecialPages" title="A list of all special pages [alt-shift-q]" accesskey="q">Special pages</a></li><li id="t-permalink"><a href="https://en.wikiversity.org/w/index.php?title=Web_programming,_an_example&amp;oldid=2044950" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="https://en.wikiversity.org/w/index.php?title=Web_programming,_an_example&amp;action=info" title="More information about this page">Page information</a></li><li id="t-cite"><a href="https://en.wikiversity.org/w/index.php?title=Special:CiteThisPage&amp;page=Web_programming%2C_an_example&amp;id=2044950" title="Information on how to cite this page">Cite this page</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-lang" aria-labelledby="p-lang-label"><button class="uls-settings-trigger" title="Language settings"></button>
+			<h3 id="p-lang-label">Languages</h3>
+			<div class="body">
+								<ul>
+									</ul>
+				<div class="after-portlet after-portlet-lang"><span class="wb-langlinks-add wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Special:NewItem?site=enwikiversity&amp;page=Web+programming%2C+an+example" title="Add interlanguage links" class="wbc-editpage">Add links</a></span></div>			</div>
+		</div>
+			<div class="portal" role="navigation" id="p-Wikimedia_projects" aria-labelledby="p-Wikimedia_projects-label">
+			<h3 id="p-Wikimedia_projects-label">Wikimedia projects</h3>
+			<div class="body">
+								<ul>
+					<li id="n-Commons"><a href="https://commons.wikimedia.org/wiki/Main_Page">Commons</a></li><li id="n-Wikibooks"><a href="https://en.wikibooks.org/wiki/Project:Main_Page">Wikibooks</a></li><li id="n-Wikipedia"><a href="https://en.wikipedia.org/wiki/Main_Page">Wikipedia</a></li><li id="n-Wiktionary"><a href="https://en.wiktionary.org/wiki/Project:Main_Page">Wiktionary</a></li><li id="n-Wikiquote"><a href="https://en.wikiquote.org/wiki/Main_Page">Wikiquote</a></li><li id="n-Wikisource"><a href="https://en.wikisource.org/wiki/Main_Page">Wikisource</a></li><li id="n-Wikinews"><a href="https://en.wikinews.org/wiki/Main_Page">Wikinews</a></li><li id="n-Wikispecies"><a href="https://species.wikimedia.org/wiki/Main_Page">Wikispecies</a></li><li id="n-Wikivoyage"><a href="https://en.wikivoyage.org/wiki/Main_Page">Wikivoyage</a></li><li id="n-Meta-Wiki"><a href="https://meta.wikimedia.org/wiki/Main_Page">Meta-Wiki</a></li><li id="n-Outreach"><a href="https://outreach.wikimedia.org/wiki/Main_Page">Outreach</a></li><li id="n-MediaWiki"><a href="https://www.mediawiki.org/wiki/MediaWiki">MediaWiki</a></li><li id="n-Wikimania"><a href="https://meta.wikimedia.org/wiki/Wikimania">Wikimania</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-coll-print_export" aria-labelledby="p-coll-print_export-label">
+			<h3 id="p-coll-print_export-label">Print/export</h3>
+			<div class="body">
+								<ul>
+					<li id="coll-create_a_book"><a href="https://en.wikiversity.org/w/index.php?title=Special:Book&amp;bookcmd=book_creator&amp;referer=Web+programming%2C+an+example">Create a book</a></li><li id="coll-download-as-rl"><a href="https://en.wikiversity.org/w/index.php?title=Special:ElectronPdf&amp;page=Web+programming%2C+an+example&amp;action=show-download-screen">Download as PDF</a></li><li id="t-print"><a href="https://en.wikiversity.org/w/index.php?title=Web_programming,_an_example&amp;printable=yes" title="Printable version of this page [alt-shift-p]" accesskey="p">Printable version</a></li>				</ul>
+							</div>
+		</div>
+				</div>
+		</div>
+				<div id="footer" role="contentinfo">
+						<ul id="footer-info">
+								<li id="footer-info-lastmod"> This page was last edited on 22 August 2019, at 21:21.</li>
+								<li id="footer-info-copyright">Text is available under the <a href="https://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-ShareAlike License</a>; additional terms may apply.  By using this site, you agree to the <a href="https://wikimediafoundation.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="https://wikimediafoundation.org/wiki/Privacy_policy">Privacy Policy.</a></li>
+							</ul>
+						<ul id="footer-places">
+								<li id="footer-places-privacy"><a href="https://foundation.wikimedia.org/wiki/Privacy_policy" class="extiw" title="wmf:Privacy policy">Privacy policy</a></li>
+								<li id="footer-places-about"><a href="https://en.wikiversity.org/wiki/Wikiversity:About" class="mw-redirect" title="Wikiversity:About">About Wikiversity</a></li>
+								<li id="footer-places-disclaimer"><a href="https://en.wikiversity.org/wiki/Wikiversity:General_disclaimer" title="Wikiversity:General disclaimer">Disclaimers</a></li>
+								<li id="footer-places-developers"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Developers</a></li>
+								<li id="footer-places-cookiestatement"><a href="https://foundation.wikimedia.org/wiki/Cookie_statement">Cookie statement</a></li>
+								<li id="footer-places-mobileview"><a href="https://en.m.wikiversity.org/w/index.php?title=Web_programming,_an_example&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+							</ul>
+										<ul id="footer-icons" class="noprint">
+										<li id="footer-copyrightico">
+						<a href="https://wikimediafoundation.org/"><img src="./Web programming, an example - Wikiversity_files/wikimedia-button.png" srcset="/static/images/wikimedia-button-1.5x.png 1.5x, /static/images/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation"></a>					</li>
+										<li id="footer-poweredbyico">
+						<a href="https://www.mediawiki.org/"><img src="./Web programming, an example - Wikiversity_files/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/images/poweredby_mediawiki_132x47.png 1.5x, /static/images/poweredby_mediawiki_176x62.png 2x" width="88" height="31"></a>					</li>
+									</ul>
+						<div style="clear: both;"></div>
+		</div>
+		
+
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.048","walltime":"0.068","ppvisitednodes":{"value":308,"limit":1000000},"ppgeneratednodes":{"value":0,"limit":1500000},"postexpandincludesize":{"value":4293,"limit":2097152},"templateargumentsize":{"value":543,"limit":2097152},"expansiondepth":{"value":8,"limit":40},"expensivefunctioncount":{"value":0,"limit":500},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":37,"limit":5000000},"entityaccesscount":{"value":0,"limit":400},"timingprofile":["100.00%   26.609      1 -total"," 72.14%   19.196      1 Template:Article"," 55.23%   14.695      1 Template:Type_box"," 48.19%   12.822      2 Template:Projectbox"," 27.51%    7.321      1 Template:Information_technology"," 16.25%    4.325      1 Template:Subject_box"," 11.53%    3.068      2 Template:Robelbox/C3"," 10.49%    2.791      2 Template:Robelbox/C2"," 10.22%    2.718      2 Template:Robelbox/C1"]},"cachereport":{"origin":"mw1269","timestamp":"20190922030558","ttl":2592000,"transientcontent":false}}});mw.config.set({"wgBackendResponseTime":95,"wgHostname":"mw1333"});});</script>
+
+
+<div class="suggestions" style="display: none; font-size: 13px;"><div class="suggestions-results"></div><div class="suggestions-special"></div></div></body></html>
